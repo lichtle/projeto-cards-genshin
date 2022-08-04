@@ -1,0 +1,253 @@
+<!-- Esse projeto foi realizado com os ensinamentos passados na MapaDev Week, dos irmãos Ricardo e Roberto (https://www.youtube.com/c/devemdobro)
+    
+Imagens PNG por DEG5270 no DeviantArt (https://www.deviantart.com/deg5270)
+
+Favicon: https://genshin-impact.fandom.com/wiki/Primogem -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/imagens/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link para a fonte PT Serif (https://fonts.google.com/specimen/PT+Serif) -->
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <!-- Link para o arquivo reset.css. Diferente do style.css, o reset irá resetar as configurações padrão de estilo definidas pelo navegador, substituindo-as pelas que a gente determinar -->
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <link rel="stylesheet" href="./src/css/responsivo.css" />
+    <!-- Link para o arquivo css responsável pela responsividade nos diversos dispositivos. Esse link deve vir após o link do style.css por conta da especificidade, caso contrário as CSS rules do arquivo responsivo.css não irão sobrescrever as CSS rules do arquivo style.css -->
+
+    <title>Genshin Impact Cards</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img
+        class="primogem"
+        src="./src/imagens/primogem-png.png"
+        alt="Primogem"
+      />
+      <h1 class="titulo">Genshin Impact Cards</h1>
+    </header>
+    <!-- Header contendo o título do site -->
+
+    <main class="container-principal">
+      <!-- Tag main estabelecendo o conteúdo principal da página (cards e setas) -->
+      <button class="setas seta-voltar" id="voltar">
+        <img src="./src/imagens/seta.png" alt="Seta de voltar" />
+      </button>
+      <ul class="char-list">
+        <!-- ul definindo a lista de personagens a serem apresentados no Card -->
+        <li class="card selecionado fundo-1">
+          <!-- Cada li deve conter 3 divs como containers do card (nome do personagem, imagem e descrição) -->
+          <div class="info">
+            <!-- Header do card contendo nome e elemento do personagem -->
+            <h2 class="char-name">Noelle</h2>
+            <p class="char-type">
+              Geo <img class="element" src="./src/imagens/geo.svg" />
+            </p>
+          </div>
+
+          <div class="container-img">
+            <!-- Imagem do personagem -->
+            <img class="char-img" src="./src/imagens/noelle.png" alt="Noelle" />
+          </div>
+
+          <div class="descricao">
+            <!-- Título e descrição do personagem -->
+            <h3 class="titulo-descricao">Descrição</h3>
+            <p class="texto">
+              Noelle é uma empregada obediente que sonha em se juntar aos
+              Cavaleiros de Favonius. Ela usa como arma um espadão e tem
+              habilidade para cozinhar um exemplar especial do prato Panqueca
+              Esponjosa.
+            </p>
+          </div>
+        </li>
+        <li class="card fundo-2">
+          <!-- Cada li deve conter 3 divs como containers do card (nome do personagem, imagem e descrição) -->
+          <div class="info">
+            <!-- Header do card contendo nome e elemento do personagem -->
+            <h2 class="char-name">Xiangling</h2>
+            <p class="char-type">
+              Pyro <img class="element" src="./src/imagens/pyro.svg" />
+            </p>
+          </div>
+
+          <div class="container-img">
+            <!-- Imagem do personagem -->
+            <img
+              class="char-img"
+              src="./src/imagens/xiangling.png"
+              alt="Xiangling"
+            />
+          </div>
+
+          <div class="descricao">
+            <!-- Título e descrição do personagem -->
+            <h3 class="titulo-descricao">Descrição</h3>
+            <p class="texto">
+              Xiangling é a chefe de cozinha no Restaurante de Wanmin. Seus
+              pratos mais populares são os picantes! Ela usa como arma uma lança
+              e tem habilidade para cozinhar um exemplar especial do prato Peixe
+              Fervido do Restaurante de Wanmin.
+            </p>
+          </div>
+        </li>
+        <li class="card fundo-3">
+          <!-- Cada li deve conter 3 divs como containers do card (nome do personagem, imagem e descrição) -->
+          <div class="info">
+            <!-- Header do card contendo nome e elemento do personagem -->
+            <h2 class="char-name">Chongyun</h2>
+            <p class="char-type">
+              Cryo <img class="element" src="./src/imagens/cryo.svg" />
+            </p>
+          </div>
+
+          <div class="container-img">
+            <!-- Imagem do personagem -->
+            <img
+              class="char-img"
+              src="./src/imagens/chongyun.png"
+              alt="Chongyun"
+            />
+          </div>
+          <div class="descricao">
+            <!-- Título e descrição do personagem -->
+            <h3 class="titulo-descricao">Descrição</h3>
+            <p class="texto">
+              Chongyun é um exorcista de Liyue. Ele usa como arma um espadão e
+              tem habilidade para cozinhar um exemplar especial do prato
+              Macarrão Frio com Iguarias das Montanhas.
+            </p>
+          </div>
+        </li>
+        <li class="card fundo-4">
+          <!-- Cada li deve conter 3 divs como containers do card (nome do personagem, imagem e descrição) -->
+          <div class="info">
+            <!-- Header do card contendo nome e elemento do personagem -->
+            <h2 class="char-name">Diona</h2>
+            <p class="char-type">
+              Cryo <img class="element" src="./src/imagens/cryo.svg" />
+            </p>
+          </div>
+
+          <div class="container-img">
+            <!-- Imagem do personagem -->
+            <img class="char-img" src="./src/imagens/diona.png" alt="Diona" />
+          </div>
+          <div class="descricao">
+            <!-- Título e descrição do personagem -->
+            <h3 class="titulo-descricao">Descrição</h3>
+            <p class="texto">
+              Diona é uma bartender talentosa na Taverna da Cauda do Gato, em
+              Mondstadt. Ela usa como arma um arco e tem habilidade para
+              cozinhar um exemplar especial do prato Isso não é um aperitivo.
+            </p>
+          </div>
+        </li>
+        <li class="card fundo-5">
+          <!-- Cada li deve conter 3 divs como containers do card (nome do personagem, imagem e descrição) -->
+          <div class="info">
+            <!-- Header do card contendo nome e elemento do personagem -->
+            <h2 class="char-name">Barbara</h2>
+            <p class="char-type">
+              Hydro <img class="element" src="./src/imagens/hydro.svg" />
+            </p>
+          </div>
+
+          <div class="container-img">
+            <!-- Imagem do personagem -->
+            <img
+              class="char-img"
+              src="./src/imagens/barbara.png"
+              alt="Barbara"
+            />
+          </div>
+          <div class="descricao">
+            <!-- Título e descrição do personagem -->
+            <h3 class="titulo-descricao">Descrição</h3>
+            <p class="texto">
+              Barbara é diaconesa da Igreja de Favonious, mas também é uma
+              estrela amada pelas pessoas de Mondstadt. Ela usa como arma um
+              catalisador e tem habilidade para cozinhar um exemplar especial do
+              prato Ensopado Picante.
+            </p>
+          </div>
+        </li>
+        <li class="card fundo-6">
+          <!-- Cada li deve conter 3 divs como containers do card (nome do personagem, imagem e descrição) -->
+          <div class="info">
+            <!-- Header do card contendo nome e elemento do personagem -->
+            <h2 class="char-name">Sucrose</h2>
+            <p class="char-type">
+              Anemo <img class="element" src="./src/imagens/anemo.svg" />
+            </p>
+          </div>
+
+          <div class="container-img">
+            <!-- Imagem do personagem -->
+            <img
+              class="char-img"
+              src="./src/imagens/sucrose.png"
+              alt="Sucrose"
+            />
+          </div>
+          <div class="descricao">
+            <!-- Título e descrição do personagem -->
+            <h3 class="titulo-descricao">Descrição</h3>
+            <p class="texto">
+              Sucrose é uma bio-alquimista curiosa ligada aos Cavaleiros de
+              Favonius. Ela usa como arma um catalisador e tem habilidade para
+              cozinhar um exemplar especial do prato Refeição Nutritiva (V.593).
+            </p>
+          </div>
+        </li>
+        <li class="card fundo-7">
+          <!-- Cada li deve conter 3 divs como containers do card (nome do personagem, imagem e descrição) -->
+          <div class="info">
+            <!-- Header do card contendo nome e elemento do personagem -->
+            <h2 class="char-name">Fischl</h2>
+            <p class="char-type">
+              Electro <img class="element" src="./src/imagens/electro.svg" />
+            </p>
+          </div>
+
+          <div class="container-img">
+            <!-- Imagem do personagem -->
+            <img class="char-img" src="./src/imagens/fischl.png" alt="Fischl" />
+          </div>
+          <div class="descricao">
+            <!-- Título e descrição do personagem -->
+            <h3 class="titulo-descricao">Descrição</h3>
+            <p class="texto">
+              Fischl é uma investigadora da Guilda de Aventureiros de Mondstadt.
+              Seu corvo e parceiro de batalha se chama Oz. Ela usa como arma um
+              arco e tem habilidade para cozinhar um exemplar especial do prato
+              Sinfonia Abençoada.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <button class="setas" id="avancar">
+        <img src="./src/imagens/seta.png" alt="Seta de avançar" />
+      </button>
+    </main>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

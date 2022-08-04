@@ -1,0 +1,34 @@
+@media (max-width: 620px) {
+  /* O @media é utilizado para estilizar o conteúdo para diferentes resoluções. O parâmetro dentro dos parênteses indica quando essas regras CSS serão aplicadas. Nesse caso, quando a resolução da tela for menor que 620px. Então abre-se colchetes e dentro deles serão aplicadas as regras de estilo normalmente */
+
+  .container-principal {
+    padding: 0 15px;
+    gap: 10px;
+  }
+
+  .container-principal .setas {
+    width: 20px;
+    height: 20px;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: 480px;
+  }
+
+  .card .char-img {
+    max-height: 230px;
+  }
+
+  .card .info .char-name {
+    max-width: 50%;
+    font-size: 18px;
+  }
+
+  .card .info .char-type {
+    font-size: 14px;
+  }
+}
