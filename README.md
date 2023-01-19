@@ -2,7 +2,7 @@
 
 Este projeto foi realizado durante o evento Mapa DevWeek, ministrado pelos irmãos Ricardo e Roberto (<a href="https://www.instagram.com/devemdobro" target="_blank">@devemdobro</a>). Os irmãos fizeram de Pokemón e resolvi personalizar o meu com algo que gosto mais: o jogo Genshin Impact. 💖
 
-<img src="/src/screenshots/genshin.gif">
+<img src="/src/screenshots/genshin.gif" alt="GIF do projeto">
 
 ## Tecnologias utilizadas
 
